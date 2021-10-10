@@ -2,8 +2,6 @@
 # -*- coding: utf-8 -*-
 
 if __name__ == '__main__':
-    # Определите общие символы в двух строках, введенных с клавиатуры.
-    if __name__ == "__main__":
         string1 = set(input('Введите первую строку: ').lower())
         string2 = set(input('Введите вторую строку: ').lower())
         print(string2.intersection(string1))

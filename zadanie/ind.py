@@ -3,11 +3,10 @@
 
 if __name__ == '__main__':
     # X = (A\B) /\ ( C u D)     Y = (A /\ not(B)) u (C\D)
-    if __name__ == "__main__":
-        U = set("abcdefghijklmnopqrstuvwxyz")
-        A = {'c', 'e', 'h', 'n'}
-        B = {'e', 'f', 'k', 'n', 'x'}
-        C = {'b', 'c', 'h', 'p', 'r', 's'}
-        D = {'b', 'e', 'g'}
-        print('X =', (A - B) & (C | D))
-        print('Y =', (C - D) | (A & (U - B)))
+    U = set("abcdefghijklmnopqrstuvwxyz")
+    a = {'c', 'e', 'h', 'n'}
+    b = {'e', 'f', 'k', 'n', 'x'}
+    c = {'b', 'c', 'h', 'p', 'r', 's'}
+    d = {'b', 'e', 'g'}
+    print('X =', (a - b) & (c | d))
+    print('Y =', (c - d) | (a & (U - b)))

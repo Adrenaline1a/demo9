@@ -2,13 +2,10 @@
 # -*- coding: utf-8 -*-
 
 if __name__ == '__main__':
-    # Подсчитайте количество гласных в строке, введенной
-    # с клавиатуры с использованием множеств.
-    if __name__ == "__main__":
-        words = {'а', 'у', 'е', 'о', 'э', 'я', 'и', 'ю', 'ё', 'ы'}
+        letters = {'а', 'у', 'е', 'о', 'э', 'я', 'и', 'ю', 'ё', 'ы'}
         string = list(input('Введите строку: ').lower())
         count = 0
         for i, slov in enumerate(string):
-            if slov in words:
+            if slov in letters:
                 count += 1
         print(count)
